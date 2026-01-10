@@ -10,3 +10,14 @@ window.addEventListener("click", (e) => {
         dropdownList.classList.remove("active");
     }
 });
+
+const sidebarLinks = document.querySelectorAll("#aside ul li a");
+
+sidebarLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+        document.querySelectorAll("#aside ul li").forEach((li) => {
+            li.classList.remove("active");
+        });
+        this.parentElement.classList.add("active");
+    });
+});

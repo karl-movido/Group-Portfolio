@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <title>Technical Documentation Page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>CSS Flexbox Documentation</header>
+    <span class="hr"></span>
+    <a href="#Overview" class="nav-link">Overview</a>
+    <a href="#Basic_Terminology" class="nav-link">Basic Terminology</a>
+    <a href="#Creating_a_Flex_Container" class="nav-link">Creating a Flex Container</a>
+    <a href="#Flex_Direction" class="nav-link">Flex Direction</a>
+    <a href="#Justifying_Content" class="nav-link">Justifying Content</a>
+  </nav>
+  <main id="main-doc">
+    <h1>Introduction to CSS Flexbox</h1>
+    <section class="main-section" id="Overview">
+      <header>Overview</header>
+      <p>
+        Flexbox, short for Flexible Box Layout, is a CSS layout model designed to provide an
+        efficient way to align and distribute space among items in a container. It excels at
+        creating responsive designs and dynamic alignment of elements, especially when the size
+        of your content is unknown or dynamic.
+      </p>
+      <p>
+        The main idea behind the flex layout is to give the container the ability to alter its
+        items’ width/height to best fill the available space. This is especially helpful when
+        designing layouts for different screen sizes or device orientations.
+      </p>
+      <p>
+        Unlike traditional layout methods like floats or inline-block, Flexbox simplifies common
+        tasks like vertically centering elements, equal spacing, and layout rearrangement.
+      </p>
+    </section>
+
+    <section class="main-section" id="Basic_Terminology">
+      <header>Basic Terminology</header>
+      <p>
+        Before diving into the syntax, it's important to understand some key terms in Flexbox:
+      </p>
+      <ul>
+        <li><span class="bold">Flex container:</span> The parent element where flex layout is applied.</li>
+        <li><span class="bold">Flex items:</span> The children of the flex container.</li>
+        <li><span class="bold">Main axis:</span> The primary axis along which flex items are laid out.</li>
+        <li><span class="bold">Cross axis:</span> The axis perpendicular to the main axis.</li>
+        <li><span class="bold">Direction:</span> Controlled by the <code>flex-direction</code> property.</li>
+      </ul>
+      <p>
+        Understanding these terms will help you navigate and use Flexbox effectively. Many properties depend on
+        whether you're working along the main or cross axis.
+      </p>
+    </section>
+
+    <section class="main-section" id="Creating_a_Flex_Container">
+      <header>Creating a Flex Container</header>
+      <p>
+        To use Flexbox, you need to define a flex container by setting the <code>display</code> property to
+        <code>flex</code> or <code>inline-flex</code>.
+      </p>
+      <p>Here’s how you declare a flex container:</p>
+      <div class="code-snippet">
+        <pre><code>
+  .container {
+    display: flex;
+  }
+        </code></pre>
+      </div>
+      <p>
+        Once a container becomes a flex container, all its direct children become flex items. This changes their
+        layout behavior and allows you to use Flexbox properties to manage spacing, alignment, and order.
+      </p>
+      <p>
+        You can also use <code>inline-flex</code> instead of <code>flex</code> if you want the container to behave
+        like an inline element while still applying Flexbox rules.
+      </p>
+    </section>
+
+    <section class="main-section" id="Flex_Direction">
+      <header>Flex Direction</header>
+      <p>
+        The <code>flex-direction</code> property defines how flex items are placed in the flex container. It
+        determines the main axis.
+      </p>
+      <p>Here are the available values:</p>
+      <ul>
+        <li><code>row</code> (default): Items are placed from left to right.</li>
+        <li><code>row-reverse</code>: Items are placed from right to left.</li>
+        <li><code>column</code>: Items are placed from top to bottom.</li>
+        <li><code>column-reverse</code>: Items are placed from bottom to top.</li>
+      </ul>
+      <p>Example:</p>
+      <div class="code-snippet">
+        <pre><code>
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+        </code></pre>
+      </div>
+    </section>
+
+    <section class="main-section" id="Justifying_Content">
+      <header>Justifying Content</header>
+      <p>The <code>justify-content</code> property controls how flex items are aligned along the main axis.</p>
+      <p>Common values include:</p>
+      <ul>
+        <li><code>flex-start</code>: Aligns items to the start of the container.</li>
+        <li><code>flex-end</code>: Aligns items to the end of the container.</li>
+        <li><code>center</code>: Centers items along the main axis.</li>
+        <li><code>space-between</code>: Evenly distributes items, first item at start and last at end.</li>
+        <li><code>space-around</code>: Equal space around all items.</li>
+        <li><code>space-evenly</code>: Equal space between all items, including the ends.</li>
+      </ul>
+      <p>Example:</p>
+      <div class="code-snippet">
+        <pre><code>
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+        </code></pre>
+      </div>
+    </section>
+  </main>
+</body>
+<!-- this is a comment -->
+
+</html>

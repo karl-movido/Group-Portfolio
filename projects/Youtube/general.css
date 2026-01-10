@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(241, 241, 241);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  color: #979dac;
+  background-color: #1a1b1d;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #3b4252;
+  width: 350px;
+  padding: 50px;
+}
+
+header {
+  color: #f8f9fa;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hr {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #85909b;
+  margin: 50px 0 50px 0;
+}
+
+#navbar a {
+  padding: 12px;
+  margin: 10px 0 10px 0;
+  color: #979dac;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transform-origin: left center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#navbar a:hover {
+  color: #f8f9fa;
+  width: 100%;
+  transform: scale(1.05);
+}
+
+#main-doc {
+  margin: 50px 80px 80px 430px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #f8f9fa;
+}
+
+#main-doc header {
+  margin-bottom: 20px;
+}
+
+p,
+ul,
+pre {
+  font-size: 1.1rem;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 3em;
+}
+
+.code-snippet {
+  background-color: #1b1f27;
+  margin: 0;
+  border-radius: 6px;
+  color: #babfca;
+  width: 400px;
+}
+
+pre code {
+  font-family: "JetBrains Mono";
+  font-size: 1rem;
+}
+
+code:not(.code-snippet > pre > code) {
+  font-family: "JetBrains Mono";
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2px 4px;
+  background-color: #414758;
+  border-radius: 6px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e3440;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #414758;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    width: 200px;
+    padding: 10px;
+    height: 100vh;
+  }
+
+  header {
+    font-size: 1.4rem;
+  }
+}

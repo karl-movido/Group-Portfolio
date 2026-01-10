@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/1d35d22d79.js" crossorigin="anonymous"></script>
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img src="anvil.png" alt="flowforge logo" id="header-img" />
+        <p class="logo-title">FlowForge</p>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#process" class="nav-link">How It Works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Where creative chaos meets seamless focus</h1>
+        <p>Unlock your best ideas with a workspace that adapts to you.</p>
+        <form action="https://www.freecodecamp.org/email-submit" id="form">
+          <input type="email" name="email" id="email" placeholder="Enter your email" required />
+          <input type="submit" value="Get Started" id="submit" href="https://www.freecodecamp.org/email-submit" />
+        </form>
+      </section>
+      <section id="features">
+        <h2>Why FlowForge</h2>
+        <div class="grid">
+          <div class="grid-icons">
+            <i class="fas fa-layer-group icons"></i>
+          </div>
+          <div class="grid-desc">
+            <h3>Smart Workflow Design</h3>
+            <p>Switch between writing, sketching, planning, and prototyping—all in one intuitive canvas.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid-icons">
+            <i class="fa-solid fa-bolt icons"></i>
+          </div>
+          <div class="grid-desc">
+            <h3>Lightning Sync</h3>
+            <p>Real-time collaboration across devices. No lag. No limits.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid-icons">
+            <i class="fa-solid fa-lock icons"></i>
+          </div>
+          <div class="grid-desc">
+            <h3>Private by Design</h3>
+            <p>Your ideas stay yours. End-to-end encryption keeps your creative work secure.</p>
+          </div>
+        </div>
+      </section>
+      <section id="process">
+        <video src="https://youtu.be/y8Yv4pnO7qc" id="video" controls></video>
+      </section>
+      <section id="pricing">
+        <h2>Simple, Transparent Pricing</h2>
+        <div class="pricing-container">
+          <div class="pricing-card lite">
+            <div class="plan">FlowForge Lite</div>
+            <div class="content">
+              <h3>₱0 / month</h3>
+              <p>Perfect for individuals and students who just need the essentials.</p>
+              <ul>
+                <li>Capture quick notes, sketches, and mood boards</li>
+                <li>Syncs offline seamlessly—no connection, no problem</li>
+                <li>Keep your ideas handy anytime, anywhere</li>
+              </ul>
+              <button class="select-btn">Select</button>
+            </div>
+          </div>
+          <div class="pricing-card studio">
+            <div class="plan">FlowForge Studio</div>
+            <div class="content">
+              <h3>₱750 / month</h3>
+              <p>Unlock your full creative potential with smart tools made for thinkers.</p>
+              <ul>
+                <li>Intuitive layout tools for clean, pro designs</li>
+                <li>Collaborate and give feedback in real-time</li>
+                <li>Organize everything with smart tags</li>
+                <li>Built for design-focused minds</li>
+              </ul>
+              <button class="select-btn">Select</button>
+            </div>
+          </div>
+          <div class="pricing-card pro">
+            <div class="plan">FlowForge Pro</div>
+            <div class="content">
+              <h3>₱1,500 / month</h3>
+              <p>For teams and pros who want to move faster, smarter.</p>
+              <ul>
+                <li>Prototype with animations and motion</li>
+                <li>Team dashboards, timelines, and productivity views</li>
+                <li>Let AI cluster and connect your ideas</li>
+                <li>Drive momentum with purpose-built features</li>
+              </ul>
+              <button class="select-btn">Select</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2016, FlowForge</span>
+    </footer>
+  </body>
+</html>

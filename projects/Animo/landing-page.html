@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/landing-page.css" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Animo</title>
+    </head>
+    <body>
+        <main class="landing-page">
+            <div class="background-stack">
+                <div class="header-wave">
+                    <img src="images/header-behing.png" alt="" />
+                    <img src="images/header-front.png" alt="" />
+                </div>
+                <div class="bottom-wave">
+                    <img src="images/footer-behind.png" alt="" />
+                    <img src="images/footer-front.png" alt="" />
+                </div>
+            </div>
+
+            <div class="content">
+                <section class="branding">
+                    <h1 class="logo">Ani<span>mo</span></h1>
+                    <p class="tagline">Your <span>harvest</span>, Your <span>success</span>.</p>
+                </section>
+
+                <section id="landing-view" class="auth-btn">
+                    <button class="login-btn" id="login-trigger" dataset-login-btn>Login</button>
+                    <div class="register-prompt">
+                        <p>Don’t have an account yet?</p>
+                        <button class="register-btn" id="register-trigger">Register</button>
+                    </div>
+                </section>
+
+                <section id="auth-selection" class="auth-selection hidden">
+                    <p class="selection-text" id="selection-text"></p>
+                    <div class="role-container">
+                        <button class="role-card" id="farmer-btn">
+                            <p>Farmer</p>
+                            <img src="images/farmer.png" alt="" />
+                        </button>
+                        <button class="role-card consumer" id="consumer-btn">
+                            <p>Consumer</p>
+                            <img src="images/man.png" alt="" />
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="language-selector" id="language-selector">
+                <ul class="languages">
+                    <li><a href="#">Tagalog</a></li>
+                    <li><a href="#">English (US)</a></li>
+                    <li><a href="#">Tausug</a></li>
+                    <li><a href="#">Hiligaynon</a></li>
+                    <li><a href="#">Cebuano</a></li>
+                    <li><a href="#">Ilocano</a></li>
+                </ul>
+            </footer>
+        </main>
+
+        <script src="scripts/landing-page.js"></script>
+    </body>
+</html>

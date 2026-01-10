@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B2B3B;
+}
+
+html {
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #3B4B5B;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.display {
+    background-color: #183549;
+    padding: 16px 12px;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    background: transparent;
+    outline: none;
+    caret-color: transparent;
+    border: none;
+}
+
+.screen {
+    color: #FCF5E6;
+    text-align: right;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.history {
+    color: #AAA7A1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.keys-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.keys {
+    display: flex;
+    gap: 7px;
+}
+
+.keys button {
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FCF5E6;
+}
+
+.equal {
+    flex: 1;
+}
+
+.num {
+    background-color: #647B95;
+    box-shadow: 0 6px 0 #293441, 0 0 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+    transition: 50ms ease;
+}
+
+.num:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px #293441, 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.operator {
+    background-color: #63AEF9;
+    box-shadow: 0 6px 0 #31608F, 0 0 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+    transition: 50ms ease;
+}
+
+.operator:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px #31608F, 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.equal, .del {
+    background-color: #FFAF63;
+    box-shadow: 0 6px 0 #A26327, 0 0 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+    transition: 50ms ease;
+}
+
+.equal:active, .del:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px #A26327, 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.clear {
+    background-color: #FF6363;
+    box-shadow: 0 6px 0 #983535, 0 0 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+    transition: 50ms ease;
+}
+
+.clear:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px #983535, 0 0 12px rgba(0, 0, 0, 0.3);
+}
