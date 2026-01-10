@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Style -->
-        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/landing-page.css" />
 
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,10 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/1d35d22d79.js" crossorigin="anonymous"></script>
+
         <title>Group 3 Portfolio</title>
     </head>
     <body>
@@ -29,7 +33,6 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">The Group</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <section class="hero-section">
@@ -43,7 +46,6 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
                                     maxime veniam sunt atque explicabo ullam enim?
                                 </p>
-                                <button class="learn-more">Learn More</button>
                             </div>
                             <div class="img">
                                 <img src="images/karl-slider.png" alt="" />
@@ -53,13 +55,12 @@
                     <div class="slider-item bg2">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hey!</p>
+                                <p>Hello!</p>
                                 <h1>I'm <span>Matt</span>, Aspiring Web Designer</h1>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
                                     maxime veniam sunt atque explicabo ullam enim?
                                 </p>
-                                <button class="learn-more">Learn More</button>
                             </div>
                             <div class="img">
                                 <img src="images/jedric.png" alt="" />
@@ -69,13 +70,12 @@
                     <div class="slider-item bg3">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hey!</p>
+                                <p>Hi!</p>
                                 <h1>I'm <span>Celine</span>, Aspiring IT Support</h1>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
                                     maxime veniam sunt atque explicabo ullam enim?
                                 </p>
-                                <button class="learn-more">Learn More</button>
                             </div>
                             <div class="img">
                                 <img src="images/celine.png" alt="" />
@@ -91,7 +91,6 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
                                     maxime veniam sunt atque explicabo ullam enim?
                                 </p>
-                                <button class="learn-more">Learn More</button>
                             </div>
                             <div class="img">
                                 <img src="images/dirk.png" alt="" />
@@ -101,19 +100,21 @@
                     <div class="slider-item bg5">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hey!</p>
+                                <p>Hello!</p>
                                 <h1>I'm <span>Charls</span>, Aspiring Data Analyst</h1>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
                                     maxime veniam sunt atque explicabo ullam enim? Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.
                                 </p>
-                                <button class="learn-more">Learn More</button>
                             </div>
                             <div class="img">
                                 <img src="images/charls.png" alt="" />
                             </div>
                         </div>
+                    </div>
+                    <div class="arrow-btn">
+                        <i class="fa-solid fa-circle-arrow-down fa-3x arrow-btn"><a href="#group-section"></a></i>
                     </div>
                     <div class="slider-dots">
                         <span class="dot active" data-slide="0"></span>
@@ -127,8 +128,86 @@
         </header>
 
         <main>
-            <section class="the-group">
-                
+            <section class="group-section" id="group-section">
+                <h2 class="group-section-title">The Group</h2>
+                <h1 class="group-section-heading"><span>Meet the Team</span><br />Behind Byte<span>Squad</span></h1>
+                <p class="group-section-desc">
+                    We're a team of 5 students, each bringing skills and creativity to the table. Together, we made this
+                    project to show what we have learned in web development.
+                </p>
+
+                <div class="member-cards">
+                    <div class="member-card">
+                        <img src="images/karl-card.jpg" alt="" />
+                        <div class="card-desc">
+                            <h2>Karl</h2>
+                            <p>Front-end Development</p>
+                            <p>UI/UX & Visual Design</p>
+                            <div class="portfolio-link">
+                                <a href="#" class="portfolio-btn">Portfolio</a>
+                                <a href="#" class="portfolio-icon"
+                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <img src="images/jedric-card.jpg" alt="" />
+                        <div class="card-desc">
+                            <h2>Matt</h2>
+                            <p>Front-end Development</p>
+                            <p>UI/UX & Visual Design</p>
+                            <div class="portfolio-link">
+                                <a href="#" class="portfolio-btn">Portfolio</a>
+                                <a href="#" class="portfolio-icon"
+                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <img src="images/celine.jpg" alt="" />
+                        <div class="card-desc">
+                            <h2>Celine</h2>
+                            <p>Front-end Development</p>
+                            <p>UI/UX & Visual Design</p>
+                            <div class="portfolio-link">
+                                <a href="#" class="portfolio-btn">Portfolio</a>
+                                <a href="#" class="portfolio-icon"
+                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <img src="images/dirk-card.jpg" alt="" />
+                        <div class="card-desc">
+                            <h2>Jairus</h2>
+                            <p>Front-end Development</p>
+                            <p>UI/UX & Visual Design</p>
+                            <div class="portfolio-link">
+                                <a href="#" class="portfolio-btn">Portfolio</a>
+                                <a href="#" class="portfolio-icon"
+                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <img src="images/charls.jpg" alt="" />
+                        <div class="card-desc">
+                            <h2>Charls</h2>
+                            <p>Front-end Development</p>
+                            <p>UI/UX & Visual Design</p>
+                            <div class="portfolio-link">
+                                <a href="#" class="portfolio-btn">Portfolio</a>
+                                <a href="#" class="portfolio-icon"
+                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
