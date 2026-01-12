@@ -1,0 +1,117 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #3d3d3d;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 0 25px;
+  min-width: 800px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.content-table thead tr {
+  background-color: #c8f5ff;
+}
+
+th {
+  padding: 15px 20px;
+}
+
+th:first-of-type {
+  border-top-left-radius: 8px;
+}
+
+th:last-of-type {
+  border-top-right-radius: 8px;
+}
+
+td {
+  padding: 25px 20px;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(#d0f4de, #c0e8cf);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#e2eafc, #d7e3fc);
+}
+
+tr[class="read"]:last-of-type td:first-of-type {
+  border-bottom-left-radius: 8px;
+}
+
+tr[class="read"]:last-of-type td:last-of-type {
+  border-bottom-right-radius: 8px;
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#fcefb4, #fae588);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: none;
+  background-image: linear-gradient(135deg, #b6ccfe, #c8b6ff);
+}
+
+tr[class="read"] span[class="status"] {
+  border: none;
+  background-image: linear-gradient(135deg, #a7dca5, #90cf8e);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: none;
+  background-image: linear-gradient(135deg, #ffd166, #ffba66);
+}
+
+span[class="status"],
+span[class^="rate"] {
+  text-align: center;
+  border-radius: 6px;
+  width: 100px;
+  height: 16px;
+  padding: 8px;
+}
+
+span[class^="rate"] > span {
+  border-radius: 50%;
+  border: none;
+  margin: 2px;
+  height: 20px;
+  width: 20px;
+  background-color: #9da1a4;
+}
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(#ffd670, #ff9770);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+span[class~="two"] > span:nth-child(1),
+span[class~="two"] > span:nth-child(2) {
+  background-image: linear-gradient(#ffd670, #ff9770);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(#ffd670, #ff9770);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}

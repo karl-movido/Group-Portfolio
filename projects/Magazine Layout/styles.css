@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magazine-cover {
+  width: 800px;
+  height: 600px;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr;
+  gap: 20px;
+}
+
+.title {
+  grid-area: title;
+  padding: 10px;
+  text-align: center;
+  background-color: #264653;
+  border-radius: 10px;
+}
+
+h1 {
+  display: block;
+  font-size: 3rem;
+  color: white;
+  margin: 13px 0;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.feature-article {
+  grid-area: feature-article;
+  padding: 20px;
+  background-color: #2a9d8f;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(49, 49, 49);
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.small-article1,
+.small-article2 {
+  padding: 20px;
+  background-color: #81b29a;
+  border-radius: 10px;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  padding: 20px 10px;
+  background-color: #83c5be;
+  display: flex;
+  place-items: center;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

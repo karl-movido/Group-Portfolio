@@ -94,15 +94,14 @@ p {
     gap: 3rem;
 }
 
-.contact-links li a svg {
-    width: 50px;
-    height: 50px;
-    fill: var(--secondary);
+.contact-links li a i {
+    font-size: 3rem;
+    color: var(--secondary);
     transition: all 0.3s ease;
 }
 
-.contact-links li a:hover svg {
-    fill: var(--highlight);
+.contact-links li a:hover i {
+    color: var(--highlight);
     transform: translateY(-5px) scale(1.1);
     filter: drop-shadow(0 0 8px rgba(127, 90, 240, 0.6));
 }
@@ -126,13 +125,14 @@ p {
     color: var(--primary-text);
 }
 .get-to-know-btn {
+    display: inline-block;
     padding: 1rem 2rem;
     font-size: 22px;
     font-weight: 700;
     border-radius: 12px;
     color: var(--main);
     background-color: var(--highlight);
-    transition: 0.2s ease;
+    transition: all 0.2s ease;
 }
 .get-to-know-btn:hover {
     background-color: var(--main);
@@ -179,7 +179,7 @@ p {
 .project-grid {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 500px;
+    grid-auto-columns: 450px;
     padding: 2rem;
     gap: 2rem;
     overflow-x: auto;
@@ -238,14 +238,14 @@ p {
     display: inline-flex;
     transition: 0.3s ease;
 }
-.card-link:hover {
-    transform: scale(1.1);
+.card-link i {
+    color: var(--highlight);
+    font-size: 3rem;
+    transition: 0.3s ease;
 }
-.card-link svg {
-    fill: var(--highlight);
-    height: 45px;
-    width: 45px;
-    transform: rotate(-45deg);
+.card-link:hover i {
+    color: var(--tertiary);
+    transform: scale(1.1);
 }
 ::-webkit-scrollbar {
     display: none;
@@ -300,56 +300,108 @@ p {
 #contact {
     padding: 5%;
     background-color: var(--active);
-    text-align: center;
 }
 .contact-title {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
-.contact-sub {
-    margin-bottom: 2rem;
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
-.send-email-wrapper {
+.message-form {
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 20px;
+}
+.form-title {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input,
+form textarea {
+    background-color: var(--main);
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    outline: none;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s ease;
+}
+form input:hover,
+form textarea:hover {
+    box-shadow: 0 0 20px var(--highlight);
+}
+form input:focus,
+form textarea:focus {
+    box-shadow: 0 0 15px var(--highlight);
+    background-color: var(--active);
+    color: var(--main);
+}
+.submit-btn {
+    align-self: flex-start;
+    background-color: var(--highlight);
+    border: none;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    align-self: flex-start;
+    color: var(--main);
+    transition: 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: var(--main);
+    color: var(--highlight);
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+.contact-details {
+    padding: 30px;
+}
+.detail-title {
+    margin-bottom: 20px;
+}
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+.detail-card {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 4rem;
+    gap: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 20px;
+    padding: 15px;
+    transition: 0.3s ease;
 }
-.email-input {
-    font-family: "DM Sans", Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    width: 300px;
-    background-color: var(--background);
-    border: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    font-size: 18px;
-    color: var(--main);
-    outline: none;
+.detail-card:hover {
+    border-color: var(--highlight);
+    transform: scale(1.02);
+    background-color: rgba(127, 90, 240, 0.05);
 }
-.send-btn {
-    border: none;
-    background-color: var(--highlight);
-    padding: 0.8rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: all 0.3s ease;
-}
-.send-btn:hover {
-    filter: brightness(1.2);
-}
-.social-links {
+.icon-box {
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    background-color: var(--highlight);
+    border-radius: 10px;
 }
-.social-links li a:hover svg {
-    fill: var(--highlight);
-    transform: translateY(-5px) scale(1.1);
-    filter: drop-shadow(0 0 8px rgba(127, 90, 240, 0.6));
+.icon-box i {
+    font-size: 1.5rem;
+    color: white;
 }
-.social-links svg {
-    height: 40px;
-    width: 40px;
-    fill: var(--secondary);
-    transition: all 0.3s ease;
+.main-wrapper {
+    scroll-behavior: smooth;
 }

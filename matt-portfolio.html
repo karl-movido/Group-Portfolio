@@ -6,101 +6,56 @@
 
         <!-- links -->
         <link rel="stylesheet" href="styles/dashboard.css" />
+        <link rel="stylesheet" href="styles/matt-portfolio.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
 
-        <title>Matt Ilao | Portfolio</title>
+        <script src="https://kit.fontawesome.com/1d35d22d79.js" crossorigin="anonymous"></script>
+        <title>Matt Jedric | Porfolio</title>
     </head>
     <body>
         <aside id="aside">
-            <ul>
+            <ul class="reveal">
                 <li>
-                    <a href="landing-page.html"><span class="logo">ByteSquad</span></a>
+                    <a href="index.html"><span class="logo">Group 3</span></a>
                 </li>
                 <li class="active">
-                    <a href="karl-portfolio.html">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24px"
-                            viewBox="0 -960 960 960"
-                            width="24px"
-                            fill="#e3e3e3"
-                        >
-                            <path
-                                d="M440-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T520-640q0-33-23.5-56.5T440-720q-33 0-56.5 23.5T360-640q0 33 23.5 56.5T440-560ZM884-20 756-148q-21 12-45 20t-51 8q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 27-8 51t-20 45L940-76l-56 56ZM660-200q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-540 40v-111q0-34 17-63t47-44q51-26 115-44t142-18q-12 18-20.5 38.5T407-359q-60 5-107 20.5T221-306q-10 5-15.5 14.5T200-271v31h207q5 22 13.5 42t20.5 38H120Zm320-480Zm-33 400Z"
-                            />
-                        </svg>
+                    <a href="#hero-section">
+                        <i class="fa-regular fa-circle-user"></i>
                         <span>Overview</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#tech-stack">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24px"
-                            viewBox="0 -960 960 960"
-                            width="24px"
-                            fill="#e3e3e3"
-                        >
-                            <path
-                                d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"
-                            />
-                        </svg>
-                        <span>Tech Stack</span></a
+                    <a href="#about-me">
+                        <i class="fa-solid fa-info"></i>
+                        <span>About Me</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <span>Skills</span></a
                     >
                 </li>
                 <li>
-                    <a href="#education">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24px"
-                            viewBox="0 -960 960 960"
-                            width="24px"
-                            fill="#e3e3e3"
-                        >
-                            <path
-                                d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"
-                            />
-                        </svg>
-                        <span>Education</span></a
-                    >
-                </li>
-                <li>
-                    <a href="#projects">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24px"
-                            viewBox="0 -960 960 960"
-                            width="24px"
-                            fill="#e3e3e3"
-                        >
-                            <path
-                                d="M160-160q-33 0-56.5-23.5T80-240v-400q0-33 23.5-56.5T160-720h240l80-80h320q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm73-280h207v-207L233-440Zm-73-40 160-160H160v160Zm0 120v120h640v-480H520v280q0 33-23.5 56.5T440-360H160Zm280-160Z"
-                            />
-                        </svg>
+                    <a href="#skills">
+                        <i class="fa-regular fa-folder-open"></i>
                         <span>Projects</span></a
                     >
                 </li>
                 <li>
                     <a href="#contact">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24px"
-                            viewBox="0 -960 960 960"
-                            width="24px"
-                            fill="#e3e3e3"
-                        >
-                            <path
-                                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
-                            />
-                        </svg>
+                        <i class="fa-solid fa-phone"></i>
                         <span>Contact</span></a
                     >
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
                 </li>
             </ul>
         </aside>
@@ -108,52 +63,45 @@
         <div class="main-wrapper">
             <nav id="nav">
                 <div class="nav-left">
-                    <h2>Welcome!</h2>
+                    <h2 class="reveal">‧₊˚❀༉‧₊˚.</h2>
                 </div>
-                <div class="nav-right">
+                <div class="nav-right reveal">
                     <div class="profile-dropdown-btn">
-                        <div class="profile-img"><img src="images/pfp1.jpg" alt="" /></div>
+                        <div class="profile-img"><img src="images/matt-pfp.jpg" alt="" /></div>
                         <span class="username">Matt Ilao</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24px"
-                            viewBox="0 -960 960 960"
-                            width="24px"
-                            fill="#e3e3e3"
-                            class="dropdown-icon"
-                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" class="dropdown-icon">
                             <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
                         </svg>
                     </div>
                     <ul class="profile-dropdown-list">
                         <li class="dropdown-item">
-                            <a href="karl-portfolio.html">
+                            <a href="dirk-portfolio.html">
                                 <div class="dropdown-item-img">
-                                    <img src="images/pfp1.jpg" alt="" />
+                                    <img src="images/dirk.jpg" alt="" />
                                 </div>
-                                <span>Karl Movido</span>
+                                <span>Dirk Jairus</span>
                             </a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="#">
+                            <a href="celine-portfolio.html">
                                 <div class="dropdown-item-img">
-                                    <img src="images/pfp3.jpg" alt="" />
+                                    <img src="images/celine-kid.jpg" alt="" />
                                 </div>
                                 <span>Celine Cunanan</span>
                             </a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="#">
+                            <a href="karl-portfolio.html">
                                 <div class="dropdown-item-img">
-                                    <img src="images/pfp4.jpg" alt="" />
+                                    <img src="images/karl-pfp.jpg" alt="" />
                                 </div>
-                                <span>Jairus Dabon</span>
+                                <span>Karl Movido</span>
                             </a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="#">
+                            <a href="charls-portfolio.html">
                                 <div class="dropdown-item-img">
-                                    <img src="images/pfp5.png" alt="" />
+                                    <img src="images/charls.jpg" alt="" />
                                 </div>
                                 <span>Charls Nas</span>
                             </a>
@@ -163,30 +111,148 @@
             </nav>
 
             <main>
-                <div class="container">
-                    <h2>Hello World</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis eos temporibus
-                        reprehenderit nesciunt voluptatibus consectetur voluptates optio, incidunt vitae consequuntur
-                        qui nobis neque veritatis suscipit nemo facere recusandae velit.
+                <section id="hero-section">
+                    <div class="hero-left">
+                        <span class="micro-copy reveal">Konnichiwa!</span>
+                        <h1 class="hero-title reveal">Hey! I'm <span>Matt Jedric D. Ilao</span>,<br />Aspiring Software Developer</h1>
+                        <p class="hero-desc reveal">
+                            A first year Information Technology student with a love in creative hobbies. With playing video games, the curiosity of how different hardware works and process load of
+                            information led my journey to take Information Technology at college.
+                        </p>
+                    </div>
+                    <div class="hero-right reveal">
+                        <img src="images/watashi.jpg.JPG" alt="" />
+                    </div>
+                </section>
+
+                <section id="about-me">
+                    <h1 class="section-title reveal">About Me 𐔌՞. .՞𐦯</h1>
+                    <p class="about-me-desc reveal">
+                        Doumo! I'm Matt Jedric Ilao, a student from CVSU-CCAT Campus. I like listening to Japanese Pop music and watching Anime. I also do online content creating, posting my edits and
+                        drawings on Tiktok. Most of the time a spend my time playing games and that also opened me to dig deeper about the technology we are using today. Choosing Information
+                        Technology and aspiring to be working with the software field.
                     </p>
-                </div>
-                <div class="container">
-                    <h2>Hello World</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis eos temporibus
-                        reprehenderit nesciunt voluptatibus consectetur voluptates optio, incidunt vitae consequuntur
-                        qui nobis neque veritatis suscipit nemo facere recusandae velit.
-                    </p>
-                </div>
-                <div class="container">
-                    <h2>Hello World</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis eos temporibus
-                        reprehenderit nesciunt voluptatibus consectetur voluptates optio, incidunt vitae consequuntur
-                        qui nobis neque veritatis suscipit nemo facere recusandae velit.
-                    </p>
-                </div>
+                    <div class="about-img-container">
+                        <img src="images/cam.jpg" class="about-me-img1 reveal" alt="" />
+                        <img src="images/guita2.jpg" class="about-me-img2 reveal" alt="" />
+                    </div>
+                    <h3 class="hobbies-title reveal">My Hobbies ˚⟡˖ ࣪</h3>
+                    <div class="hobbies-container">
+                        <div class="hobby-card reveal">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span>Drawing</span>
+                        </div>
+                        <div class="hobby-card reveal">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>Guitar</span>
+                        </div>
+                        <div class="hobby-card reveal">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>Editing</span>
+                        </div>
+                        <div class="hobby-card reveal">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Photography</span>
+                        </div>
+                        <div class="hobby-card reveal">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="hobby-card reveal">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </div>
+                    </div>
+                    <div class="gallery-container reveal">
+                        <a href="gallery.html" class="gallery-btn">Visit My Gallery</a>
+                    </div>
+                </section>
+
+                <section id="skills">
+                    <h2 class="skills-title reveal">Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card featured reveal">
+                            <div class="card-header">
+                                <i class="fa-solid fa-ethernet"></i>
+                                <span>Networking</span>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Built & tested UTP cables (T568A and T568B) using a LAN tester.</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card reveal">
+                            <div class="card-header">
+                                <i class="fa-solid fa-display"></i>
+                                <span>Software & Logic</span>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Basic HTML, CSS, Javascript</li>
+                                <li>Basic Microsoft Office Suite</li>
+                                <li>Basic Java and C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <h1 class="section-title projects reveal">My Project</h1>
+                    <div class="project-container">
+                        <div class="project-card reveal">
+                            <div class="img-container">
+                                <img src="images/technical-documentation.png" alt="" />
+                            </div>
+                            <h3 class="card-title">Technical Documentation Page</h3>
+                            <p class="card-desc">
+                                An organized technical guide designed for information hierarchy. Features a sticky sidebar navigation and clean typography to improve readability of complex
+                                documentation.
+                            </p>
+                            <a href="projects/Technical Documentation page/index.html" class="card-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <div class="contact-container">
+                        <div class="form-container reveal">
+                            <h3 class="form-title reveal">Send Me A Message</h3>
+                            <form action="">
+                                <div class="double-group">
+                                    <input type="text" placeholder="First Name" />
+                                    <input type="text" placeholder="Last Name" />
+                                </div>
+                                <input type="email" placeholder="Email" />
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </form>
+                        </div>
+                        <div class="contact-right">
+                            <h2 class="contact-title reveal">Contact me?</h2>
+                            <p class="contact-desc reveal">I'm open for discovering, learning and collaborative projects!</p>
+                            <div class="contact-details">
+                                <div class="details-card reveal">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>mattilao@gmail.com</span>
+                                </div>
+                                <div class="details-card reveal">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>+63 955 807 9312</span>
+                                </div>
+                                <div class="details-card reveal">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Pasong Camachile I, General Trias, Cavite</span>
+                                </div>
+                                <div class="details-card reveal">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <span>Matt Jedric Ilao</span>
+                                </div>
+                                <div class="details-card reveal">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <span>sxuthieouphie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
 

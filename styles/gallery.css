@@ -1,0 +1,112 @@
+:root {
+    --bg: #fffffe;
+    --txt1: #c29577;
+    --txt2: #bcbd94;
+    --primary-color: #8c7851;
+    --secondary-color: #a86d29;
+    --accent: #362716;
+    --bg2: #f9f4ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+    color: var(--txt1);
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 18px;
+}
+
+
+
+#short-edits {
+    background-color: var(--bg2);
+    padding: 5%;
+    text-align: center;
+}
+.edit-title {
+    margin-bottom: 20px;
+}
+.edit-desc {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.headers {
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 40px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.video-card {
+    position: relative;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    box-shadow: 8px 8px var(--accent);
+    aspect-ratio: 16 / 9;
+    max-height: 500px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+.video-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 142, 60, 0.3); /* Uses your primary color for a glow */
+}
+.video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+video::-webkit-media-controls-panel {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+#drawings {
+    background-color: var(--bg);
+    padding: 5%;
+    text-align: center;
+}
+.media-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 8px 8px var(--primary-color);
+    transition: 0.3s ease;
+}
+.media-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 142, 60, 0.3); /* Uses your primary color for a glow */
+}
+#photos {
+    padding: 5%;
+    background-color: var(--bg2);
+    text-align: center;
+}
+.main-wrapper {
+    scroll-behavior: smooth;
+}

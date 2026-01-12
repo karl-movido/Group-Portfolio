@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color0: #e76f51;
+  --color1: #f4a261;
+  --color2: #e9c46a;
+  --color3: #83c5be;
+  --color4: #60a992;
+  --color5: #20c7b3;
+  --solid-border: 1px solid black;
+  --dashed-border: 1px dashed black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+th.time {
+  padding: 10px;
+}
+
+th.days {
+  padding-bottom: 10px;
+}
+
+td {
+  width: 100px;
+  height: 20px;
+  padding: 6px;
+}
+
+.sharp .days {
+  border-bottom: var(--solid-border);
+}
+
+.sharp td {
+  border-bottom: var(--solid-border);
+  border-left: var(--solid-border);
+  border-right: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+  border-left: var(--solid-border);
+  border-right: var(--solid-border);
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+#legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+#legend-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#legend-gradient {
+  width: 100px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: var(--solid-border);
+  background: linear-gradient(
+    to right,
+    var(--color0) 0% 16%,
+    var(--color1) 16% 33%,
+    var(--color2) 33% 50%,
+    var(--color3) 50% 66%,
+    var(--color4) 66% 83%,
+    var(--color5) 83% 100%
+  );
+}

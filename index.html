@@ -10,10 +10,7 @@
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
 
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/1d35d22d79.js" crossorigin="anonymous"></script>
@@ -24,43 +21,65 @@
         <!-- Navbar -->
         <header>
             <nav class="navbar">
-                <div class="logo">
-                    <a href="#">
-                        <h1>Byte<span>Squad</span></h1>
-                    </a>
-                </div>
                 <ul class="links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">The Group</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#group-section">The Group</a></li>
+                    <li><a href="#tech-stack">Tech Stack</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </nav>
-            <section class="hero-section">
+            <section id="hero-section">
+                <div class="intro-box">
+                    <div class="status-bar reveal" style="--i: 0">
+                        <span class="pulse">Project Status: In Progress</span>
+                    </div>
+                    <h1 class="intro-title reveal" style="--i: 1">Meet <span class="group-number">Group 3.</span> Five Minds. <br />One <span class="group-number">Creative Space</span></h1>
+                    <p class="group-desc reveal" style="--i: 2">
+                        Five people, one project, and a lot of caffeine. <br />
+                        Through combined ideas, we present to you our group portfolio.
+                    </p>
+
+                    <div class="scroll-hint reveal" style="--i: 0">
+                        <a href="#group-section">Meet The Team</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="group-section" id="group-section">
                 <div class="slider-container">
                     <div class="slider-item bg1">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hey!</p>
-                                <h1>I'm <span>Karl</span>, Aspiring Web Developer</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
-                                    maxime veniam sunt atque explicabo ullam enim?
-                                </p>
+                                <span class="micro-copy">Hey!</span>
+                                <h1 class="reveal" style="--i: 0">I'm <span>Karl</span>, Aspiring Web Developer</h1>
+                                <p class="reveal" style="--i: 1">Ang taong masipag... laging pagod.</p>
+                                <a class="portfolio-btn reveal" style="--i: 2" href="karl-portfolio.html">
+                                    <span>Portfolio</span>
+                                    <div class="btn-icon-box">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </div>
+                                </a>
                             </div>
                             <div class="img">
-                                <img src="images/karl-slider.png" alt="" />
+                                <img src="images/karl-slider.png" alt="" class="reveal" style="--i: 1" />
                             </div>
                         </div>
                     </div>
                     <div class="slider-item bg2">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hello!</p>
+                                <span class="micro-copy">Hello!</span>
                                 <h1>I'm <span>Matt</span>, Aspiring Web Designer</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
-                                    maxime veniam sunt atque explicabo ullam enim?
-                                </p>
+                                <p>"Nagmahal na yung Paotsin..."<br />Siya nga hindi nag mahal</p>
+                                <a class="portfolio-btn" href="matt-portfolio.html">
+                                    <span>Portfolio</span>
+                                    <div class="btn-icon-box">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </div>
+                                </a>
                             </div>
                             <div class="img">
                                 <img src="images/jedric.png" alt="" />
@@ -70,12 +89,15 @@
                     <div class="slider-item bg3">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hi!</p>
+                                <span class="micro-copy">Hi!</span>
                                 <h1>I'm <span>Celine</span>, Aspiring IT Support</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
-                                    maxime veniam sunt atque explicabo ullam enim?
-                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint maxime veniam sunt atque explicabo ullam enim?</p>
+                                <a class="portfolio-btn" href="celine-portfolio.html">
+                                    <span>Portfolio</span>
+                                    <div class="btn-icon-box">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </div>
+                                </a>
                             </div>
                             <div class="img">
                                 <img src="images/celine.png" alt="" />
@@ -85,12 +107,15 @@
                     <div class="slider-item bg4">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hey!</p>
+                                <span class="micro-copy">Hey!</span>
                                 <h1>I'm <span>Jairus</span>, Aspiring IT Technician</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
-                                    maxime veniam sunt atque explicabo ullam enim?
-                                </p>
+                                <p>Life is just like a stair, hindi ka aangat hangga’t wala kang inaapakan</p>
+                                <a class="portfolio-btn" href="dirk-portfolio.html">
+                                    <span>Portfolio</span>
+                                    <div class="btn-icon-box">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </div>
+                                </a>
                             </div>
                             <div class="img">
                                 <img src="images/dirk.png" alt="" />
@@ -100,21 +125,20 @@
                     <div class="slider-item bg5">
                         <div class="slide-content">
                             <div class="info">
-                                <p>Hello!</p>
+                                <span class="micro-copy">Hello!</span>
                                 <h1>I'm <span>Charls</span>, Aspiring Data Analyst</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maiores sint
-                                    maxime veniam sunt atque explicabo ullam enim? Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit.
-                                </p>
+                                <p>If there's a hole there's a goal</p>
+                                <a class="portfolio-btn" href="charls-portfolio.html">
+                                    <span>Portfolio</span>
+                                    <div class="btn-icon-box">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </div>
+                                </a>
                             </div>
                             <div class="img">
                                 <img src="images/charls.png" alt="" />
                             </div>
                         </div>
-                    </div>
-                    <div class="arrow-btn">
-                        <i class="fa-solid fa-circle-arrow-down fa-3x arrow-btn"><a href="#group-section"></a></i>
                     </div>
                     <div class="slider-dots">
                         <span class="dot active" data-slide="0"></span>
@@ -125,87 +149,80 @@
                     </div>
                 </div>
             </section>
-        </header>
 
-        <main>
-            <section class="group-section" id="group-section">
-                <h2 class="group-section-title">The Group</h2>
-                <h1 class="group-section-heading"><span>Meet the Team</span><br />Behind Byte<span>Squad</span></h1>
-                <p class="group-section-desc">
-                    We're a team of 5 students, each bringing skills and creativity to the table. Together, we made this
-                    project to show what we have learned in web development.
-                </p>
+            <section id="tech-stack">
+                <h1 class="section-title reveal">Our <span class="highlight">Tech Stack</span></h1>
+                <p class="subtitle reveal">The tools we used to turn random thoughts into code.</p>
 
-                <div class="member-cards">
-                    <div class="member-card">
-                        <img src="images/karl-card.jpg" alt="" />
-                        <div class="card-desc">
-                            <h2>Karl</h2>
-                            <p>Front-end Development</p>
-                            <p>UI/UX & Visual Design</p>
-                            <div class="portfolio-link">
-                                <a href="karl-portfolio.html" class="portfolio-btn">Portfolio</a>
-                                <a href="karl-portfolio.html" class="portfolio-icon"
-                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                                ></a>
-                            </div>
-                        </div>
+                <div class="tech-grid">
+                    <div class="tech-card reveal" style="--i: 0">
+                        <img src="images/html.png" alt="" />
+                        <h3>HTML5</h3>
+                        <p>The number one programming language... ofc not</p>
                     </div>
-                    <div class="member-card">
-                        <img src="images/jedric-card.jpg" alt="" />
-                        <div class="card-desc">
-                            <h2>Matt</h2>
-                            <p>Front-end Development</p>
-                            <p>UI/UX & Visual Design</p>
-                            <div class="portfolio-link">
-                                <a href="#" class="portfolio-btn">Portfolio</a>
-                                <a href="#" class="portfolio-icon"
-                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                                ></a>
-                            </div>
-                        </div>
+                    <div class="tech-card reveal" style="--i: 1">
+                        <img src="images/text.png" alt="" />
+                        <h3>CSS3</h3>
+                        <p>Really gotta work hard to make things beautiful</p>
                     </div>
-                    <div class="member-card">
-                        <img src="images/celine.jpg" alt="" />
-                        <div class="card-desc">
-                            <h2>Celine</h2>
-                            <p>Front-end Development</p>
-                            <p>UI/UX & Visual Design</p>
-                            <div class="portfolio-link">
-                                <a href="#" class="portfolio-btn">Portfolio</a>
-                                <a href="#" class="portfolio-icon"
-                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                                ></a>
-                            </div>
-                        </div>
+                    <div class="tech-card reveal" style="--i: 2">
+                        <img src="images/js.png" alt="" />
+                        <h3>JavaScript</h3>
+                        <p>Its complicated. Hard to understand. But it works, unless you forgot a semicolon</p>
                     </div>
-                    <div class="member-card">
-                        <img src="images/dirk-card.jpg" alt="" />
-                        <div class="card-desc">
-                            <h2>Jairus</h2>
-                            <p>Front-end Development</p>
-                            <p>UI/UX & Visual Design</p>
-                            <div class="portfolio-link">
-                                <a href="#" class="portfolio-btn">Portfolio</a>
-                                <a href="#" class="portfolio-icon"
-                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                                ></a>
-                            </div>
-                        </div>
+                    <div class="tech-card reveal" style="--i: 3">
+                        <img src="images/vs-code.png" alt="" />
+                        <h3>VS Code</h3>
+                        <p>Who uses notepad nowadays???</p>
                     </div>
-                    <div class="member-card">
-                        <img src="images/charls.jpg" alt="" />
-                        <div class="card-desc">
-                            <h2>Charls</h2>
-                            <p>Front-end Development</p>
-                            <p>UI/UX & Visual Design</p>
-                            <div class="portfolio-link">
-                                <a href="#" class="portfolio-btn">Portfolio</a>
-                                <a href="#" class="portfolio-icon"
-                                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                                ></a>
-                            </div>
-                        </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <h1 class="section-title reveal">Franticly <span class="highlight">Answered</span> Queries</h1>
+                <ul class="accordion">
+                    <li class="reveal" style="--i: 0">
+                        <input type="radio" name="accordion" id="first" checked />
+                        <label for="first">How many cups of coffee were consumed during development?</label>
+                        <div class="content"><p>Probably more than 9 sachets of nescafe twin pack (Not sponsored). Kulay kape narin po dugo ng coder.</p></div>
+                    </li>
+                    <li class="reveal" style="--i: 1">
+                        <input type="radio" name="accordion" id="second" />
+                        <label for="second">Who is the leader of the group?</label>
+                        <div class="content"><p>The one who has a laptop.</p></div>
+                    </li>
+                    <li class="reveal" style="--i: 2">
+                        <input type="radio" name="accordion" id="third" />
+                        <label for="third">Who is Pau?</label>
+                        <div class="content"><p>Can't disclose that information. Matt might kill me (Karl)...</p></div>
+                    </li>
+                    <li class="reveal" style="--i: 3">
+                        <input type="radio" name="accordion" id="fourth" />
+                        <label for="fourth">Is the code clean?</label>
+                        <div class="content"><p>Maybe? Maybe not? Not sure. But it works, so no need to take that seriously hehe.</p></div>
+                    </li>
+                    <li class="reveal" style="--i: 4">
+                        <input type="radio" name="accordion" id="fifth" />
+                        <label for="fifth">Did you search on how to center a div?</label>
+                        <div class="content"><p>Of course, that's a part of a web developer's workflow.</p></div>
+                    </li>
+                    <li class="reveal" style="--i: 5">
+                        <input type="radio" name="accordion" id="sixth" />
+                        <label for="sixth">Do you think you will get a perfect score?</label>
+                        <div class="content"><p>Awa nalang po maamshie.</p></div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="final-footer">
+                <div class="footer-content">
+                    <h2 class="reveal">© 2026 Group 3 | All Rights Reserved.</h2>
+                    <p class="reveal">No `divs` were permanently harmed in the making of this website.</p>
+
+                    <div class="social-links">
+                        <a href="#" class="reveal" style="--i: 0"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="reveal" style="--i: 1"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="reveal" style="--i: 2"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
             </section>

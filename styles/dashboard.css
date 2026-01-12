@@ -43,7 +43,7 @@ body {
     position: sticky;
     top: 0;
     align-self: flex-start;
-    border-right: solid 1px var(--secondary-text);
+    border-right: solid 1px #343536;
 }
 
 #aside .logo {
@@ -52,9 +52,17 @@ body {
     font-weight: 600;
     font-size: 22px;
 }
-
+#aside ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 #aside ul li {
     margin-bottom: 12px;
+}
+#aside ul li:last-child {
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
 #aside > ul > li:first-child {
@@ -65,7 +73,7 @@ body {
 }
 
 #aside a {
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 0.85em;
     color: var(--primary-text);
     display: flex;
@@ -74,7 +82,7 @@ body {
     transition: all 0.3s ease;
 }
 
-#aside a svg {
+#aside a i {
     fill: var(--main);
     flex-shrink: 0;
     transition: all 0.3s ease;
@@ -142,6 +150,9 @@ body {
     gap: 20px;
     cursor: pointer;
 }
+.profile-dropdown-btn i {
+    color: var(--main);
+}
 
 .profile-dropdown-list {
     position: absolute;
@@ -157,7 +168,11 @@ body {
     transition: all 0.3s ease;
     z-index: 1000;
 }
-
+.profile-img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
 .profile-dropdown-list.active {
     opacity: 1;
     visibility: visible;
@@ -179,6 +194,8 @@ body {
 
 .dropdown-item-img img {
     width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 .dropdown-item a:hover {

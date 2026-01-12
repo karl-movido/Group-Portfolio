@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/gallery.css" />
+        <link rel="stylesheet" href="styles/dashboard.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/1d35d22d79.js" crossorigin="anonymous"></script>
+
+        <title>Matt Jedric | Portfolio</title>
+    </head>
+    <body>
+        <aside id="aside">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="logo">ByteSquad</span></a>
+                </li>
+                <li class="active">
+                    <a href="#short-edits">
+                        <i class="fa-solid fa-photo-film"></i>
+                        <span>Short Edits</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#drawings">
+                        <i class="fa-solid fa-pencil"></i>
+                        <span>Drawings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#photos">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>Photos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="matt-portfolio.html">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Go Back</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="main-wrapper">
+            <nav id="nav">
+                <div class="nav-left">
+                    <h2>‧₊˚❀༉‧₊˚.</h2>
+                </div>
+                <div class="nav-right">
+                    <div class="profile-dropdown-btn">
+                        <div class="profile-img"><img src="images/pfp1.jpg" alt="" /></div>
+                        <span class="username">Matt Ilao</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" class="dropdown-icon">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </div>
+                    <ul class="profile-dropdown-list">
+                        <li class="dropdown-item">
+                            <a href="matt-portfolio.html">
+                                <div class="dropdown-item-img">
+                                    <img src="images/pfp2.png" alt="" />
+                                </div>
+                                <span>Matt Ilao</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="celine-portfolio.html">
+                                <div class="dropdown-item-img">
+                                    <img src="images/pfp3.jpg" alt="" />
+                                </div>
+                                <span>Celine Cunanan</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="karl-portfolio.html">
+                                <div class="dropdown-item-img">
+                                    <img src="images/pfp4.jpg" alt="" />
+                                </div>
+                                <span>Karl Movido</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="charls-portfolio.html">
+                                <div class="dropdown-item-img">
+                                    <img src="images/pfp5.png" alt="" />
+                                </div>
+                                <span>Charls Nas</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <section id="short-edits">
+                    <h1 class="edit-title">Matt's Works</h1>
+                    <p class="edit-desc">See my works below</p>
+
+                    <h2 class="headers">Short Edits</h2>
+                    <div class="gallery-grid">
+                        <div class="video-card">
+                            <video controls class="media-item">
+                                <source src="videos/edit1.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-card">
+                            <video controls class="media-item">
+                                <source src="videos/edit2.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-card">
+                            <video controls class="media-item">
+                                <source src="videos/edit3.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="drawings">
+                    <h2 class="headers">Drawings</h2>
+                    <div class="gallery-grid">
+                        <div class="img-container">
+                            <img src="images/drawing1.jpg" alt="Drawing 1" class="media-item" />
+                        </div>
+                        <div class="img-container">
+                            <img src="images/drawing2.jpg" alt="Drawing 1" class="media-item" />
+                        </div>
+                        <div class="img-container">
+                            <img src="images/drawing3.jpg" alt="Drawing 1" class="media-item" />
+                        </div>
+                    </div>
+                </section>
+
+                <section id="photos">
+                    <h2 class="headers">Photos</h2>
+                    <div class="gallery-grid">
+                        <div class="img-container">
+                            <img src="images/picture1.JPG" alt="Drawing 1" class="media-item" />
+                        </div>
+                        <div class="img-container">
+                            <img src="images/picture2.jpg" alt="Drawing 1" class="media-item" />
+                        </div>
+                        <div class="img-container">
+                            <img src="images/picture3.JPG" alt="Drawing 1" class="media-item" />
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="scripts/dashboard.js"></script>
+    </body>
+</html>
